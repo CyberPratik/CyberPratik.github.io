@@ -1,0 +1,126 @@
+.background-image{
+    background-image: url("images/bg-img.png");
+    height: 100vh;  
+    background-size: cover;
+}
+p{
+    font-size: 18px;
+}
+i{
+    font-size: 25px;
+}
+strong{
+    font-size: 20px;
+}
+.dev-icons  img{
+    height:80px;
+    width:80px;
+}
+.dev-icons{
+    list-style: none;
+}
+.carousel-item img{
+    height: 700px;
+    width: 400px;
+}
+  .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: rgba(128, 128, 128, 0.7); /* Gray background */
+      border-radius: 50%; /* Rounded shape */
+      width: 40px;
+      height: 40px;
+    }
+
+    .carousel-control-prev-icon:hover,
+    .carousel-control-next-icon:hover {
+      background-color: rgba(64, 64, 64, 0.9); /* Darker on hover */
+    }
+
+    @media (min-width: 1200px) { /* Large screens (lg and above) */
+        .carousel-item img {
+          height: 100vh;
+          object-fit: contain;
+        }   
+      }
+    @media (min-width: 992px) { /* Large screens (lg and above) */
+        .carousel-item img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 991px) { /* Medium screens (md only) */
+        .carousel-item img {
+          height:100%;
+          object-fit: cover;
+        }
+      }
+      @media (max-width: 767px) { /* Small screens (sm and below) */
+        .carousel-item img {
+          height: 100vh;
+          object-fit: cover
+          
+        }
+      }
+
+      /* Text adjustment */
+      @media (min-width: 992px) { /* Large screens (lg and above) */
+        .list-group li a {
+          font-size: 1.2rem;
+        }
+        .dev-icons img{
+            width: 3rem;
+        }
+        .profile p{
+            font-size: 1.2rem;
+        }
+        .footer p{
+            font-size: 1.0rem;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 991px) { /* Medium screens (md only) */
+        .list-group li a {
+          font-size: 1.2rem;
+        }
+        .dev-icons img{
+            width: 2.5rem;
+        }
+        .profile p, .footer p{
+            font-size: 1.0rem;
+        }
+      }
+      @media (max-width: 767px) { /* Small screens (sm and below) */
+        .list-group li a {
+          font-size: 1.2rem;
+        }
+        .dev-icons img{
+           
+            width: 2rem;
+        }
+        .profile p, .footer p{
+            font-size: 1.0rem;
+        }
+      }
+          /* About section respnosive */
+          .dev-icons img {
+            width: 50px;
+            height: 50px;
+          }
+          @media (min-width: 768px) {
+            .dev-icons img {
+              width: 60px;
+              height: 60px;
+            }
+          }
+          @media (min-width: 992px) {
+            .dev-icons img {
+              width: 70px;
+              height: 70px;
+            }
+          }
+          
+
+/* Footer */
+a{
+        text-decoration: none;
+        color: inherit;
+}
