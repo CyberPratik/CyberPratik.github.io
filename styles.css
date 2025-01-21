@@ -1,3 +1,7 @@
+/* navbar */
+.dropdown-item:hover{
+  background-color: grey;
+}
 .background-image{
     background-image: url("images/bg-img.png");
     height: 100vh;  

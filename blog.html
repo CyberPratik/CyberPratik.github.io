@@ -3,50 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - My Portfolio</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black px-4 py-3">
-        <div class="container-fluid">
-          <img src="images/black-hat.jpg" class="rounded-circle" alt="Profile Icon" style="margin-right: 10px; width: 50px; height: 50px;">
-          <a class="navbar-brand" href="#">Pratik</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="index.html" aria-current="page">Home</a>
-                    </li>                    
-                    <li class="nav-item dropdown ">
-                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#about" role="button" aria-expanded="false">About</a>
-                      <ul class="dropdown-menu bg-black">
-                        <li><a class="dropdown-item text-white" href="#">Features</a></li>
-                        <li><a class="dropdown-item text-white" href="blog.html">Blog</a></li>
-                        <li><a class="dropdown-item text-white" href="#">Contact</a></li>
-                      </ul>
-                    </li>
-                </ul>
-          </div>
-        </div>
-      </nav>
-
-    <div class="container">
-        <h1 class="blog-title">The Bootstrap Blog</h1>
-        <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black px-4 py-3">
+    <div class="container-fluid">
+      <img src="images/black-hat.jpg" class="rounded-circle" alt="Profile Icon" style="margin-right: 10px; width: 50px; height: 50px;">
+      <a class="navbar-brand" href="#">Pratik</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html" aria-current="page">Home</a>
+                </li>  
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>                  
+                <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#about" role="button" aria-expanded="false">About</a>
+                  <ul class="dropdown-menu bg-black ">
+                    <li><a class="dropdown-item text-white" href="#">Features</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Contact</a></li>
+                  </ul>
+                </li>
+            </ul>
+      </div>
     </div>
-
-    <footer class="blog-footer mx-auto">
-        <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="#">@mdo</a>.</p>
-        <p>
-            <a href="#">Back to top</a>
-        </p>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </nav>
+<!-- Project Cards -->
+<div class="container ">
+    <div class="block">
+        <h3>Project 1</h3>
+        <img class="icon mx-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" />
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum cupiditate, molestias distinctio velit neque omnis sunt ad voluptatem soluta, nihil quod similique placeat laudantium minus a consequuntur pariatur, natus sed?
+        Illum alias hic eligendi voluptates provident. Praesentium repudiandae iusto impedit blanditiis, sunt similique atque quisquam voluptate dolores illum cumque excepturi dignissimos, ipsa amet quas iste. Ducimus odit doloribus unde maxime.</p>
+    </div>
+    <div class="block">
+        <h3>Project 2</h3>
+        <img class="icon mx-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" />
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum cupiditate, molestias distinctio velit neque omnis sunt ad voluptatem soluta, nihil quod similique placeat laudantium minus a consequuntur pariatur, natus sed?
+        Illum alias hic eligendi voluptates provident. Praesentium repudiandae iusto impedit blanditiis, sunt similique atque quisquam voluptate dolores illum cumque excepturi dignissimos, ipsa amet quas iste. Ducimus odit doloribus unde maxime.</p>
+    </div>
+    <div class="block">
+        <h3>Project 3</h3>
+        <img class="icon mx-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" />
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum cupiditate, molestias distinctio velit neque omnis sunt ad voluptatem soluta, nihil quod similique placeat laudantium minus a consequuntur pariatur, natus sed?
+        Illum alias hic eligendi voluptates provident. Praesentium repudiandae iusto impedit blanditiis, sunt similique atque quisquam voluptate dolores illum cumque excepturi dignissimos, ipsa amet quas iste. Ducimus odit doloribus unde maxime.</p>
+    </div>
+</div>    
 </body>
 </html>
