@@ -1,4 +1,7 @@
 /* navbar */
+.nav-item{
+  transform: translateX(-50px);
+}
 .dropdown-item:hover{
   background-color: grey;
 }

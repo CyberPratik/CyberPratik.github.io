@@ -1,43 +1,18 @@
 /* Project-container */
-.container{
+.block-container{
     width: 100%;
     margin: -1px 0px;
-    border: 1px solid grey;
+    border-top: 1px;
+    border-color: white;
     display: flex;
     height: 100%;
     justify-content: space-evenly;
     padding: 1%;
     padding-top: 30px;;
-    background-color: #1B1833;
+    background-color: #2f4858;
 }
 
-/* Project Block */
-.block{
-    text-align: center;
-    float:left;
-    width: 23.33%;
-    border: 1px solid #AB4459;
-    margin-right: 5px;
-    padding: 10px;
-    box-sizing: border-box;
-    background-color: #441752;
-    color: #F29F58;
-    border-radius: 10px;
-}
-.block h3{
-    color: white;
-}
-.block p{
-    width: 99%;
-}
-.block:hover{
-    transform: translateY(-5px);
-    cursor: pointer;
-}
-
-/* image in block */
-.block img{
-    height: 80px; 
-    width: 90%;
-    padding: 5px 0px;
+.card img{
+    height: 40%;
+    
 }
