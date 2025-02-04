@@ -1,79 +1,123 @@
 /* navbar */
+.navbar {
+  position: sticky;
+
+}
+
 /* .nav-item{
   transform: translateX(-50px);
 } */
-.dropdown-item:hover{
+.dropdown-item:hover {
   background-color: grey;
 }
-.background-image{
-    background-image: url("images/bg-img.png");
-    height: 100vh;  
-    background-size: cover;
-    position: relative;
+
+.background-image {
+  background-image: url("images/bg-img.png");
+  height: 100vh;
+  background-size: cover;
+  position: relative;
 }
-p{
-    font-size: 18px;
+
+p {
+  font-size: 18px;
 }
-i{
-    font-size: 25px;
+
+i {
+  font-size: 25px;
 }
-strong{
-    font-size: 20px;
+
+strong {
+  font-size: 20px;
 }
-.dev-icons  img{
-    height:80px;
-    width:80px;
+
+.dev-icons img {
+  height: 80px;
+  width: 80px;
 }
-.dev-icons{
-    list-style: none;
+
+.dev-icons {
+  list-style: none;
 }
-  .carousel-item img{
-      height: 700px;
-      width: 400px;
+
+.carousel-item img {
+  height: 700px;
+  width: 400px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(128, 128, 128, 0.7);
+  /* Gray background */
+  border-radius: 50%;
+  /* Rounded shape */
+  width: 40px;
+  height: 40px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(64, 64, 64, 0.9);
+  /* Darker on hover */
+}
+
+@media (min-width: 1200px) {
+
+  /* Large screens (lg and above) */
+  .carousel-item img {
+    height: 100vh;
+    object-fit: contain;
   }
-    .carousel-control-prev-icon,
-      .carousel-control-next-icon {
-        background-color: rgba(128, 128, 128, 0.7); /* Gray background */
-        border-radius: 50%; /* Rounded shape */
-        width: 40px;
-        height: 40px;
-      }
+}
 
-      .carousel-control-prev-icon:hover,
-      .carousel-control-next-icon:hover {
-        background-color: rgba(64, 64, 64, 0.9); /* Darker on hover */
-      }
+@media (min-width: 992px) {
 
-      @media (min-width: 1200px) { /* Large screens (lg and above) */
-          .carousel-item img {
-            height: 100vh;
-            object-fit: contain;
-          }   
-        }
-      @media (min-width: 992px) { /* Large screens (lg and above) */
-          .carousel-item img {
-            height: 100%;
-            object-fit: cover;
-          }
-        }
-        @media (min-width: 768px) and (max-width: 991px) { /* Medium screens (md only) */
-          .carousel-item img {
-            height:100%;
-            object-fit: cover;
-          }
-        }
-        @media (max-width: 767px) { /* Small screens (sm and below) */
-          .carousel-item img {
-            height: 100vh;
-            object-fit: cover
-            
-          }
-        }
-        /* Carousel container */
+  /* Large screens (lg and above) */
+  .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* Medium screens (md only) */
+  .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  /* Small screens (sm and below) */
+  .carousel-item img {
+    height: 100vh;
+    object-fit: cover
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 18px;
+  }
+}
+
+/* Carousel container */
 .carousel-container {
   width: 100%;
-  overflow: hidden; /* Hide overflowing items */
+  overflow: hidden;
+  /* Hide overflowing items */
   position: relative;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  font-weight: 500;
 }
 
 
@@ -82,19 +126,22 @@ strong{
 /* Carousel container */
 .carousel-container {
   width: 100%;
-  overflow: hidden; /* Hide overflowing items */
+  overflow: hidden;
+  /* Hide overflowing items */
   position: relative;
 }
 
 /* Carousel wrapper */
 .carousel {
   display: flex;
-  transition: transform 2s ease; /* Smooth transition for sliding */
+  transition: transform 2s ease;
+  /* Smooth transition for sliding */
 }
 
 /* Carousel items */
 .carousel-item {
-  flex: 0 0 100%; /* Each item takes up 100% of the container */
+  flex: 0 0 100%;
+  /* Each item takes up 100% of the container */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,23 +149,29 @@ strong{
 
 /* Make images responsive */
 .carousel-item img {
-  width: 100%; /* Make sure the image scales to the container width */
-  height: auto; /* Maintain the aspect ratio */
-  object-fit: cover; /* Cover the container without stretching */
+  width: 100%;
+  /* Make sure the image scales to the container width */
+  height: auto;
+  /* Maintain the aspect ratio */
+  object-fit: cover;
+  /* Cover the container without stretching */
 }
 
 /* For smaller screen sizes (mobile responsiveness) */
 @media (max-width: 768px) {
   .carousel-item img {
-    object-fit: contain; /* Ensure image fits without zooming in */
+    object-fit: contain;
+    /* Ensure image fits without zooming in */
   }
 }
 
 /* Optional: Style for mobile devices to make carousel items smaller */
 @media (max-width: 480px) {
   .carousel-item img {
-    object-fit: contain; /* Ensure image fits without zooming in */
-    height: auto; /* Adjust height on very small screens if needed */
+    object-fit: contain;
+    /* Ensure image fits without zooming in */
+    height: auto;
+    /* Adjust height on very small screens if needed */
   }
 }
 
@@ -126,65 +179,88 @@ strong{
 
 
 
-      /* Text adjustment */
-      @media (min-width: 992px) { /* Large screens (lg and above) */
-        .list-group li a {
-          font-size: 1.2rem;
-        }
-        .dev-icons img{
-            width: 3rem;
-        }
-        .profile p{
-            font-size: 1.2rem;
-        }
-        .footer p{
-            font-size: 1.0rem;
-        }
-      }
-      @media (min-width: 768px) and (max-width: 991px) { /* Medium screens (md only) */
-        .list-group li a {
-          font-size: 1.2rem;
-        }
-        .dev-icons img{
-            width: 2.5rem;
-        }
-        .profile p, .footer p{
-            font-size: 1.0rem;
-        }
-      }
-      @media (max-width: 767px) { /* Small screens (sm and below) */
-        .list-group li a {
-          font-size: 1.2rem;
-        }
-        .dev-icons img{
-           
-            width: 2rem;
-        }
-        .profile p, .footer p{
-            font-size: 1.0rem;
-        }
-      }
-          /* About section respnosive */
-          .dev-icons img {
-            width: 50px;
-            height: 50px;
-          }
-          @media (min-width: 768px) {
-            .dev-icons img {
-              width: 60px;
-              height: 60px;
-            }
-          }
-          @media (min-width: 992px) {
-            .dev-icons img {
-              width: 70px;
-              height: 70px;
-            }
-          }
-          
+/* Text adjustment */
+@media (min-width: 992px) {
+
+  /* Large screens (lg and above) */
+  .list-group li a {
+    font-size: 1.2rem;
+  }
+
+  .dev-icons img {
+    width: 3rem;
+  }
+
+  .profile p {
+    font-size: 1.2rem;
+  }
+
+  .footer p {
+    font-size: 1.0rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* Medium screens (md only) */
+  .list-group li a {
+    font-size: 1.2rem;
+  }
+
+  .dev-icons img {
+    width: 2.5rem;
+  }
+
+  .profile p,
+  .footer p {
+    font-size: 1.0rem;
+  }
+}
+
+@media (max-width: 767px) {
+
+  /* Small screens (sm and below) */
+  .list-group li a {
+    font-size: 1.2rem;
+  }
+
+  .dev-icons img {
+
+    width: 2rem;
+  }
+
+  .profile p,
+  .footer p {
+    font-size: 1.0rem;
+  }
+}
+
+/* About section respnosive */
+.dev-icons img {
+  width: 50px;
+  height: 50px;
+}
+
+@media (min-width: 768px) {
+  .dev-icons img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .dev-icons img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+#project {
+  padding: 0 2rem;
+}
 
 /* Footer */
-a{
-        text-decoration: none;
-        color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }

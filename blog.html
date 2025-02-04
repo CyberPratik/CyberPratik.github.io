@@ -1,67 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style2.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-</head>
-<body>
-<!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-black px-4 py-3">
-    <div class="container-fluid">
-      <img src="images/black-hat.jpg" class="rounded-circle" alt="Profile Icon" style="margin-right: 10px; width: 50px; height: 50px;">
-      <a class="navbar-brand" href="#">Pratik</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio-Blog</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-black px-4 py-3"
+      id="navbar"
+    >
+      <div class="container-fluid">
+        <img
+          src="images/black-hat.jpg"
+          class="rounded-circle"
+          alt="Profile Icon"
+          style="margin-right: 10px; width: 50px; height: 50px"
+        />
+        <a class="navbar-brand" href="#">Pratik</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                <li class="nav-item ">
-                    <a class="nav-link" href="index.html" aria-current="page">Home</a>
-                </li>  
-                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>                  
-                <li class="nav-item dropdown ">
-                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#about" role="button" aria-expanded="false">About</a>
-                  <ul class="dropdown-menu bg-black ">
-                    <li><a class="dropdown-item text-white" href="#">Features</a></li>
-                    <li><a class="dropdown-item text-white" href="#">Contact</a></li>
-                  </ul>
-                </li>
-            </ul>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-<!-- Project Cards -->
-<div class="block-container"> 
+    </nav>
+   <!-- Card group-1 -->
+    <section>
+      <div class="container mt-5 blog">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D12AQGqF-2r4d__Ng/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1712652170362?e=2147483647&v=beta&t=OX3RdFygWQ7waBbijbbN_S5GCB5OOVp62L2ml-HYdlM" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">How to Build a Web Application with React</h5>
+                        <p class="card-text">Learn the fundamentals of building web applications using React.Building web applications with React can seem overwhelming at first, but once you understand the basic concepts and tools, it becomes a lot more manageable. In this post, we will walk through the steps of setting up a React project from scratch. We'll cover the essentials, including JSX syntax, components, props, and state management. We'll also discuss best practices and tips for optimizing your React app for performance. In this post, we will walk through setting up a React project from scratch...</p>
+                        <a href="https://react.dev/" class="btn btn-primary" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
     
-    <div class="card" style="width: 18rem;">
-        <img src="https://plus.unsplash.com/premium_photo-1666997726532-33f671ca24c8?q=80&w=2021&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D  " class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Artificial Intelligence in Coding</h5>
-          <p class="card-text">AI is transforming the way we write, debug, and optimize code. Learn how machine learning models and natural language processing are enhancing programming practices.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="https://cdn.prod.website-files.com/5e0f1144930a8bc8aace526c/65dd33d49a346d9be0b075ea_65dd12fa299e167d189f00f7-fed9c2116dfcf56370cea3063f4e88fa.jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Revolutionary Advancements in Quantum Computing</h5>
-          <p class="card-text">Quantum computing is ability to process vast amounts of data faster than traditional computers, quantum systems are set to revolutionize industries from cryptography to AI.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    <div class="card" style="width: 18rem;">
-        <img src="https://plus.unsplash.com/premium_photo-1661963212517-830bbb7d76fc?q=80&w=1986&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Machine Learning for Stock Market Prediction</h5>
-          <p class="card-text">Machine Learning can predict stock prices by analyzing historical data and detecting trends. Algorithms such as Linear Regression, Random Forests, and Neural Networks are commonly used for forecasting future stock prices.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-</div>    
-</body>
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://miro.medium.com/v2/resize:fit:1400/1*OK-sTb7tqtrAj9gyg9PQCg.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Understanding JavaScript Closures</h5>
+                        <p class="card-text">In this article, we will explore one of the most important concepts in JavaScript - closures. JavaScript closures are a fundamental concept that every JavaScript developer should understand. A closure is a function that retains access to variables from its outer function, even after the outer function has finished executing. This powerful feature allows for more flexible and reusable code, such as private variables and functions.  Understanding closures will help you write more modular and maintainable code. Closures allow us to create functions with private data...</p>
+                        <a href="https://www.geeksforgeeks.org/closure-in-javascript/" class="btn btn-primary" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://logicmojo.com/assets/dist/new_pages/images/data-structures-in-java.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mastering Java Data Structures</h5>
+                        <p class="card-text">Java provides several built-in data structures that are integral to efficiently solving various algorithmic problems. In this post, we will dive deep into Java's most commonly used data structures, including arrays, lists, sets, maps, and queues. We’ll explore their implementation in Java and compare the performance of each structure in terms of time complexity and memory usage.  This post also covers advanced Java structures like TreeMap, HashMap, and PriorityQueue. Learn to write more performant and readable code...</p>
+                        <a href="https://www.geeksforgeeks.org/data-structures/" class="btn btn-primary" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    </section>
+
+    <!-- Card Group-2 -->
+
+      
+    <!-- Footer -->
+    <footer class="bg-black text-white text-center  py-3 footer">
+
+      <p id="Contact">
+          <a href="https://github.com/CyberPratik" target="_blank"><i class="devicon-github-original"> </i></a>
+          <a href="https://www.linkedin.com/in/pratik-karande-9983a6290/" target="_blank"><i class="devicon-linkedin-plain"> </i></a>
+          <a href="https://www.facebook.com/pratik.karande.12177/" target="_blank"><i class="devicon-facebook-plain"> </i></a>
+          <a href="https://x.com/Captainpk12" target="_blank"><i class="devicon-twitter-original"> </i></a>
+        </p>
+      <p>&copy; 2025 All Rights Reserved.</p>
+      </footer>
+
+  </body>
 </html>
