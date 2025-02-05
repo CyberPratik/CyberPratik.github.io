@@ -1,7 +1,9 @@
 /* navbar */
 .navbar {
   position: sticky;
-
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
 }
 
 /* .nav-item{
@@ -15,6 +17,8 @@
   background-image: url("images/bg-img.png");
   height: 100vh;
   background-size: cover;
+  filter: saturate(1.2);
+  filter: contrast(1.1);
   position: relative;
 }
 
@@ -44,32 +48,7 @@ strong {
   width: 400px;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(128, 128, 128, 0.7);
-  /* Gray background */
-  border-radius: 50%;
-  /* Rounded shape */
-  width: 40px;
-  height: 40px;
-}
-
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover {
-  background-color: rgba(64, 64, 64, 0.9);
-  /* Darker on hover */
-}
-
-@media (min-width: 1200px) {
-
-  /* Large screens (lg and above) */
-  .carousel-item img {
-    height: 100vh;
-    object-fit: contain;
-  }
-}
-
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
 
   /* Large screens (lg and above) */
   .carousel-item img {
@@ -108,45 +87,6 @@ strong {
   }
 }
 
-/* Carousel container */
-.carousel-container {
-  width: 100%;
-  overflow: hidden;
-  /* Hide overflowing items */
-  position: relative;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-  font-weight: 500;
-}
-
-
-
-
-/* Carousel container */
-.carousel-container {
-  width: 100%;
-  overflow: hidden;
-  /* Hide overflowing items */
-  position: relative;
-}
-
-/* Carousel wrapper */
-.carousel {
-  display: flex;
-  transition: transform 2s ease;
-  /* Smooth transition for sliding */
-}
-
-/* Carousel items */
-.carousel-item {
-  flex: 0 0 100%;
-  /* Each item takes up 100% of the container */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Make images responsive */
 .carousel-item img {
   width: 100%;
@@ -155,12 +95,14 @@ strong {
   /* Maintain the aspect ratio */
   object-fit: cover;
   /* Cover the container without stretching */
+  filter: saturate(3);
 }
 
 /* For smaller screen sizes (mobile responsiveness) */
 @media (max-width: 768px) {
   .carousel-item img {
     object-fit: contain;
+    filter: saturate(5);
     /* Ensure image fits without zooming in */
   }
 }
@@ -222,7 +164,7 @@ strong {
   /* Small screens (sm and below) */
   .list-group li a {
     font-size: 1.2rem;
-  }
+  } 
 
   .dev-icons img {
 
@@ -263,4 +205,65 @@ strong {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.about-me{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+
+}
+#programming{
+/* border: 2px solid red; */
+width: 100%;
+padding-left: 1rem;
+}
+#projects{
+  /* border: 2px solid red; */
+  width: 100%;
+  padding-left: 1.2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-me{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #programming li img{
+    /* border: 2px solid red; */
+    /* width: 100%; */
+    transform: scale(1.2);
+
+    font-size: 4rem;
+  }
+  #projects{
+    /* border: 2px solid red; */
+    width: 100%;
+    padding-left: 1.2rem;
+    text-align: justify;
+  }
+  .navbar {
+    position: static;
+  }
+}
+@media only screen and  (min-width:601px) and (max-width: 900px) {
+  .about-me{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #programming li img{
+    /* border: 2px solid red; */
+    /* width: 100%; */
+    transform: scale(1.2);
+    
+    font-size: 4rem;
+  }
+  #projects{
+    /* border: 2px solid red; */
+    width: 100%;
+    padding-left: 1.2rem;
+    text-align: justify;
+  }
+  .navbar {
+    position: static;
+  }
 }
