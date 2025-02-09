@@ -1,4 +1,10 @@
 /* navbar */
+html {
+  scroll-behavior: smooth; 
+  scroll-padding-top: 80px; /* Adjust this based on your navbar height */
+}
+
+
 .navbar {
   position: sticky;
   top: 0px;
@@ -17,10 +23,39 @@
   background-image: url("images/bg-img.png");
   height: 100vh;
   background-size: cover;
-  filter: saturate(1.2);
-  filter: contrast(1.1);
+  filter: saturate(1.1  );
+  filter: contrast(1.5);  
   position: relative;
 }
+
+/* typer */
+#pratik{
+  color: #ade5ef;
+  text-shadow: 0px 0px 10px #000000;
+  /* background-color: #000000;
+  backface-visibility: visible; */
+}
+.typing-container {
+  font-family: 'Courier New', monospace;
+  padding: 10px;
+  display: inline-block;
+  color: #FF8C42;
+  text-shadow: 0px 0px 1px #DFDFDF;
+  /* background-color: #000000; */
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/*  */
 
 p {
   font-size: 18px;
@@ -43,81 +78,66 @@ strong {
   list-style: none;
 }
 
-.carousel-item img {
-  height: 700px;
-  width: 400px;
-}
 
 @media only screen and (min-width: 992px) {
-
-  /* Large screens (lg and above) */
-  .carousel-item img {
-    height: 100%;
-    object-fit: cover;
-  }
-
   .navbar-expand-lg .navbar-nav .nav-link {
     font-size: 22px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-
-  /* Medium screens (md only) */
-  .carousel-item img {
-    height: 100%;
-    object-fit: cover;
-  }
-
   .navbar-expand-lg .navbar-nav .nav-link {
     font-size: 20px;
   }
 }
 
 @media (max-width: 767px) {
-
-  /* Small screens (sm and below) */
-  .carousel-item img {
-    height: 100vh;
-    object-fit: cover
-  }
-
   .navbar-expand-lg .navbar-nav .nav-link {
     font-size: 18px;
   }
 }
 
-/* Make images responsive */
-.carousel-item img {
+/* features-start */
+.card-container {
+  display: flex;
+  gap: 20px;
+}
+
+.feat {
+  border: none;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #1a1a1a;
+}
+
+.feat:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+.card-img-top {
   width: 100%;
-  /* Make sure the image scales to the container width */
-  height: auto;
-  /* Maintain the aspect ratio */
+  height: 250px;
   object-fit: cover;
-  /* Cover the container without stretching */
-  filter: saturate(3);
+  transition: transform 0.3s ease;
 }
 
-/* For smaller screen sizes (mobile responsiveness) */
-@media (max-width: 768px) {
-  .carousel-item img {
-    object-fit: contain;
-    filter: saturate(5);
-    /* Ensure image fits without zooming in */
-  }
+.card:hover .card-img-top {
+  transform: scale(1.1);
 }
 
-/* Optional: Style for mobile devices to make carousel items smaller */
-@media (max-width: 480px) {
-  .carousel-item img {
-    object-fit: contain;
-    /* Ensure image fits without zooming in */
-    height: auto;
-    /* Adjust height on very small screens if needed */
-  }
+.card-txt{
+  text-align: center;
+  padding: 15px;
 }
 
-
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+/* features-end */
 
 
 
@@ -174,6 +194,10 @@ strong {
   .profile p,
   .footer p {
     font-size: 1.0rem;
+  }
+  .container-features{
+    flex-direction: column;
+    align-items: center;
   }
 }
 

@@ -7,25 +7,27 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="script" href="script.js">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-black px-4 py-3">
       <div class="container-fluid">
-        <img src="images/black-hat.jpg" class="rounded-circle" alt="Profile Icon" style="margin-right: 10px; width: 50px; height: 50px;">
+        <img src="images/download.jpg" class="rounded-circle" alt="Profile Icon" style="margin-right: 10px; width: 50px; height: 50px;">
         <a class="navbar-brand" href="#">Pratik</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-              <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav mx-auto my-2 my-lg-0">
                   <li class="nav-item ">
                       <a class="nav-link" href="index.html" aria-current="page">Home</a>
                   </li>
                   <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>                    
                   <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#about" role="button" aria-expanded="false">About</a>
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
                     <ul class="dropdown-menu bg-black">
                       <li><a class="dropdown-item text-white" href="#features">Features</a></li>
+                      <li><a class="dropdown-item text-white" href="#about">About</a></li>
                       <li><a class="dropdown-item text-white" href="#Contact">Contact</a></li>
                     </ul>
                   </li>
@@ -38,40 +40,74 @@
     <div class="background-image img-fluid">
       <div class="container text-center text-white profile" style="position: absolute; top: 40%; left: 50%; transform: translate(-50%, -60%);">
         <img src="images/black-hat.jpg" class="rounded-circle mb-3" alt="Profile Picture" style="width: 150px; height: 150px;">
-        <h1>Hi, I'm Pratik, Web Developer!</h1>
+        <h1><span id="pratik">Hi, I'm Pratik</span>,<div class="typing-container">
+          <span id="typed-text"></span><span class="cursor">|</span>
+        </div>
+        </h1>
         <p>I am learning web development and have experience with some projects<br> technologies including HTML, CSS, JavaScript, and more. I am passionate about creating beautiful and functional websites.</p>
         <a href="#" class="btn btn-primary">Resume</a>
       </div>
     </div>
 </section>
 <section id="features" class="text-white bg-black" style="position: relative; padding: 10px 0 50px 0;">
-  <div class="container">
-      <h2 class="text-center">Features</h2><br>
-           <!-- Carousel -->
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/ticket.png" class="d-block w-100" alt="Slide 1">
-            <!-- <div class="carousel-caption d-none d-md-block">
-              <h5>Slide 1</h5>
-              <p>Sample description for Slide 1.</p>
-            </div> -->
-          </div>
+  <div class="container"><br>
+      <h2 class="text-center">Features</h2>
+      <p><strong>My Certifications:</strong></p>
+      <!-- new-feature -->
+      <div class="container-features card-container d-flex justify-content-around">
+        <!-- Card 1-->
+        <div class="card feat" style="width: 18rem;">
+            <img src="images/ethical-hacking.jpg" class="card-img-top" alt="Desert Dunes">
+            <div class="card-body card-txt">
+                <h5 class="card-title text-white">CyberSecurity & Ethical Hacking(Workshop)</h5>
+            </div>
         </div>
-            <!-- Controls -->
-            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button> -->
-    </div>
-  </div>
+        <!-- Card 2 -->
+        <div class="card feat" style="width: 18rem;">
+            <img src="images/certificate-Pratik Santosh Karande.png" class="card-img-top" alt="City Lights">
+            <div class="card-body card-txt">
+                <h5 class="card-title text-white">30 Days DSA Challenge</h5>
+            </div>
+        </div>
+      <!-- Card 3 -->
+      <div class="card feat" style="width: 18rem;">
+          <img src="images/aiml-certificate.jpeg" class="card-img-top" alt="Mountain Adventure">
+          <div class="card-body card-txt">
+              <h5 class="card-title text-white">AIML Technology(Workshop)</h5>
+          </div>
+      </div>
+      </div>
+      <!-- new-feature -->
+      <div class="container-features card-container d-flex justify-content-around py-5">
+      <!-- Card 1 -->
+      <div class="card feat" style="width: 18rem;">
+          <img src="images/bit-by-bit certificate_page-0001.jpg" class="card-img-top" alt="Mountain Adventure">
+          <div class="card-body card-txt">
+              <h5 class="card-title text-white">Bit-by-Bit 2024</h5>
+          </div>
+      </div>
+      
+      <!-- Card 2 -->
+      <div class="card feat" style="width: 18rem;">
+          <img src="images/Certificate Of Participation- Bit By Bit_page-0001.jpg" class="card-img-top" alt="City Lights">
+          <div class="card-body card-txt">
+              <h5 class="card-title text-white">Bit-by-Bit 2025</h5>
+          </div>
+      </div>
+      
+      <!-- Card 3 -->
+      <div class="card feat" style="width: 18rem;">
+          <img src="images/Certificate of Participation- Bit By Query_page-0001.jpg" class="card-img-top" alt="Desert Dunes">
+          <div class="card-body card-txt">
+              <h5 class="card-title text-white">Bit-by-Query 2025</h5>
+          </div>
+      </div>
+      </div>
 </section>
-<section id="about" class="text-white bg-black" style="position: relative; padding: px 0 100px 0;">
-    <h2 class="text-center">About Me</h2><br>
+
+
+<section  id="about" class="text-white bg-black" style="position: relative; padding: px 0 10px 0;">
+    <h2 class="text-center py-6" >About Me</h2><br>
     <div class="container about-me mx-auto px-3">
       <!-- Row Container for Flexibility -->
 
@@ -120,9 +156,41 @@
       </div>
     </div>
   </section>
-  
+
+  <!-- Contact us -->
+  <div class="container-fluid contact-container bg-black py-4 ">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card shadow-lg">
+          <div class="card-header bg-black text-white text-center">
+            <h3>Contact Me</h3>
+          </div>
+          <div class="card-body bg-black text-light">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" ></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary w-50">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <!-- Footer -->
-<section class="bg-black text-white text-center py-3 footer">
+<section class="bg-black text-white text-center py-3 footer ">
 
     <p id="Contact">
         <a href="https://github.com/CyberPratik" target="_blank"><i class="devicon-github-original"> </i></a>
