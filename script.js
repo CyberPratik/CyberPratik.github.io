@@ -1,36 +1,34 @@
-// Get elements
-const carousel = document.querySelector('.carousel');
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
-const items = document.querySelectorAll('.carousel-item');
-const totalItems = items.length;
-let currentIndex = 0;
+const words = ["Web Developer!", "Programmer!"];
+let wordIndex = 0;
+let charIndex = 0;
+const typingSpeed = 150;   // Speed of typing
+const erasingSpeed = 100;  // Speed of erasing
+const delayBetweenWords = 2000; // Delay before typing next word
 
-// Function to update carousel position
-function updateCarousel() {
-  const itemWidth = items[0].offsetWidth; // Get the width of one carousel item
-  carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`; // Move carousel to current index
+const typedText = document.getElementById("typed-text");
+
+function type() {
+  if (charIndex < words[wordIndex].length) {
+    typedText.textContent += words[wordIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingSpeed);
+  } else {
+    setTimeout(erase, delayBetweenWords);
+  }
 }
 
-// Move to next item
-nextButton.addEventListener('click', () => {
-  if (currentIndex < totalItems - 1) {
-    currentIndex++;
+function erase() {
+  if (charIndex > 0) {
+    typedText.textContent = words[wordIndex].substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(erase, erasingSpeed);
   } else {
-    currentIndex = 0; // Loop back to the first item
+    wordIndex = (wordIndex + 1) % words.length;
+    setTimeout(type, typingSpeed);
   }
-  updateCarousel();
-});
+}
 
-// Move to previous item
-prevButton.addEventListener('click', () => {
-  if (currentIndex > 0) {
-    currentIndex--;
-  } else {
-    currentIndex = totalItems - 1; // Loop back to the last item
-  }
-  updateCarousel();
+// Start typing effect on load
+document.addEventListener("DOMContentLoaded", () => {
+  if (words.length) setTimeout(type, delayBetweenWords);
 });
-
-// Initial carousel position
-updateCarousel();
